@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+
 
 const ShopCard = (props) => {
     return (
@@ -17,5 +19,10 @@ const ShopCard = (props) => {
         </div>
     );
 };
-
+ShopCard.propTypes = {
+    name: PropTypes.string,
+    price: PropTypes.string,
+    color: PropTypes.string,
+    img: PropTypes.string,
+}
 export default ShopCard;

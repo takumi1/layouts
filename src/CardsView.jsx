@@ -1,5 +1,6 @@
 import React from 'react';
 import ShopCard from "./ShopCard";
+import PropTypes from "prop-types";
 
 const CardsView = (props) => {
     return (
@@ -15,5 +16,7 @@ const CardsView = (props) => {
         </div>
     );
 };
-
+CardsView.propTypes = {
+    cards: PropTypes.array
+}
 export default CardsView;

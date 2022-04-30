@@ -13,7 +13,7 @@ const Store = () => {
     return (
         <div>
             <IconSwitch icon={view} onSwitch={() => onSwitch()}/>
-            {view === 'view_list' ? <ListView items={products}/> : <CardsView cards={products}/>}
+            {view === 'view_list' ? <CardsView cards={products}/> : <ListView items={products}/>}
         </div>
     );
 };
