@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-icons {
+    cursor: pointer;
+    user-select: none;
+    margin: 1em;
+    color: #636563;
+    font-size: 3em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-switch {
+    text-align: end;
+    margin-right: 2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards__wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10%;
 }
-
-.App-link {
-  color: #61dafb;
+.list__wrapper {
+    display: grid;
 }
+.shop-card {
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px lightgrey;
+    text-align: center;
+}
+.card__title {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 62%;
+}
+.card__name, .item__name {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transform: scaleY(1.4);
+}
+.card__color, .item__color {
+    color: #6E6A68;
+}
+.card__footer {
+    display: flex;
+    justify-content: space-around;
+}
+.card__price, .card__cart-button, .item__cart-button, .item__price {
+    color: #D84429;
+}
+.card__price, .item__price {
+    line-height: 2.5em;
+    font-weight: 500;
+    transform: scaleY(1.5);
+}
+.card__cart-button, .item__cart-button  {
+    padding: 10px 20px;
+    height: 1em;
+    line-height: 1em;
+    border: 1px solid #D84429;
+    border-radius: 50px;
+    font-weight: 700;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    cursor: pointer;
+}
+.shop-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    margin: 0 3em 5px 3em;
+    height: 6.5em;
+    line-height: 6.5em;
+}
+.item__price  {
+    margin-top: 2.5em;
+}
+.item__cart-button {
+    margin: 2em 1em 0 0;
 }
